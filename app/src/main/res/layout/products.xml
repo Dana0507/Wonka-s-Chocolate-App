@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#FFE0F2"
+    tools:context=".ProductsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#4B006E"
+            app:titleTextColor="@color/white"
+            app:title="Shop Chocolates"
+            app:navigationIcon="@drawable/arrow_back_24px" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/products_content" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

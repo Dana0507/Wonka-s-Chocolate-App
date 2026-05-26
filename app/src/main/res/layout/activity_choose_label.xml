@@ -1,0 +1,255 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purpleback"
+    android:fillViewport="true"
+    tools:context=".chooseLabel"
+    android:paddingTop="80dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/willywonka"
+            android:text="Make Your Own Chocolate"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Navigation Buttons -->
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Back"
+            android:padding="8dp"
+            android:src="@drawable/left"
+            app:layout_constraintTop_toBottomOf="@id/titleText"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnNext"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Next"
+            android:padding="8dp"
+            android:src="@drawable/right"
+            app:layout_constraintTop_toBottomOf="@id/titleText"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/willywonka"
+            android:text="Choose your own label"
+            android:textColor="#F6C90E"
+            android:textSize="27sp"
+            app:layout_constraintTop_toBottomOf="@id/titleText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Preview -->
+        <ImageView
+            android:id="@+id/chocoPreview"
+            android:layout_width="0dp"
+            android:layout_height="266dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/label"
+            android:contentDescription="Chocolate Preview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subtitleText" />
+
+        <!-- Name -->
+
+        <!-- Made By -->
+        <TextView
+            android:id="@+id/labelChocoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="Name:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chocoPreview" />
+
+        <EditText
+            android:id="@+id/inputChocoName"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:hint="Enter chocolate name"
+            android:padding="12dp"
+            android:textColor="#d39c1d"
+            android:textColorHint="#d39c1d"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/labelChocoName"
+            app:layout_constraintTop_toBottomOf="@id/chocoPreview" />
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/labelMadeBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Made By:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputChocoName" />
+
+        <EditText
+            android:id="@+id/inputMadeBy"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:hint="Your name"
+            android:padding="12dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#d39c1d"
+            android:textColorHint="#d39c1d"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/labelMadeBy"
+            app:layout_constraintTop_toBottomOf="@id/inputChocoName" />
+
+        <!-- Design -->
+
+        <TextView
+            android:id="@+id/labelPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Price:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputMadeBy" />
+
+        <EditText
+            android:id="@+id/inputPrice"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:hint="Enter price (e.g. 3.50$)"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#d39c1d"
+            android:textColorHint="#d39c1d"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/labelPrice"
+            app:layout_constraintTop_toBottomOf="@id/inputMadeBy" />
+
+        <!-- Save Button -->
+
+        <!-- Progress Overlay -->
+
+        <TextView
+            android:id="@+id/labelDesignText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Design:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputPrice" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPickLabel"
+            android:layout_width="273dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#d39c1d"
+            android:text="Pick from Gallery"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:icon="@drawable/gallery"
+            app:iconGravity="textStart"
+        app:iconPadding="6dp"
+        app:iconSize="24dp"
+        app:iconTint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelDesignText"
+        app:layout_constraintTop_toBottomOf="@id/inputPrice" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveChocolate"
+            android:layout_width="320dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="#d39c1d"
+            android:padding="12dp"
+            android:text="Save Your Chocolate"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:icon="@drawable/savee"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            app:iconSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnPickLabel" />
+
+        <FrameLayout
+            android:id="@+id/progressOverlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#80000000"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:indeterminateTint="#F6C90E" />
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

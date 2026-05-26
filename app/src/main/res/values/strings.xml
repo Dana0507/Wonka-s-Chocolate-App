@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Wonka</string>
+    <string-array name="foil_colors">
+        <item>Pink</item>
+        <item>White</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Purple</item>
+        <item>Orange</item>
+        <item>Red</item>
+    </string-array>
+    <string name="welcome_to_willy_wonka_s_factory">🍫 Welcome to Willy Wonka\'s Factory 🍭</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="not_registered_yet_sign_up_now">Not registered yet? Sign Up Now</string>
+    <string name="sign_up_for_wonka_s_factory">Sign Up for Wonka’s Factory 🍭</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="list_of_ingredients">List of Ingredients:</string>
+    <string name="chocolate_name">Chocolate Name</string>
+    <string name="_4_00">$4.00</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="your_cart">Your Cart</string>
+    <string name="proceed_to_checkout">Proceed to Checkout</string>
+    <string name="total">Total</string>
+    <string name="_0_00">0.00</string>
+    <string name="_1">1</string>
+    <string name="shop_chocolate">Shop Chocolate</string>
+    <string name="customize_chocolate">Customize Chocolate</string>
+    <string name="scan_golden_ticket">Scan Golden Ticket</string>
+    <string name="view_profile">View Profile</string>
+    <string name="view_favorites">View Favorites</string>
+    <string name="view_cart">View Cart</string>
+</resources>

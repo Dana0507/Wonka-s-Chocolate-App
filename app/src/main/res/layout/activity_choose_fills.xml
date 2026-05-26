@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purpleback"
+    tools:context=".chooseFills"
+    android:paddingTop="80dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/willywonka"
+            android:text="Make Your Own Chocolate"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="54dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="80dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:padding="8dp"
+            android:src="@drawable/left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnNext"
+            android:layout_width="54dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="304dp"
+            android:layout_marginTop="80dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Next"
+            android:padding="8dp"
+            android:src="@drawable/right"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Grid of fillings -->
+
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/willywonka"
+            android:text="Choose the filling"
+            android:textColor="#F6C90E"
+            android:textSize="27sp"
+            app:layout_constraintTop_toBottomOf="@id/titleText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp" />
+
+        <GridLayout
+            android:id="@+id/fillsGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="3"
+            android:useDefaultMargins="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subtitleText">
+
+            <!-- 1. Waffers -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rounded_image_bg"
+                    android:contentDescription="Waffers"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/waffers" />
+
+                <CheckBox
+                    android:id="@+id/checkWaffers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:buttonTint="#F6C90E"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Waffers"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- 2. Tiramisu -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rounded_image_bg"
+                    android:contentDescription="Tiramisu"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tiramisu" />
+
+                <CheckBox
+                    android:id="@+id/checkTiramisu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:buttonTint="#F6C90E"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Tiramisu"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rounded_image_bg"
+                    android:contentDescription="Pistachio"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pistachio" />
+
+                <CheckBox
+                    android:id="@+id/checkPistachio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:buttonTint="#F6C90E"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Pistachio"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rounded_image_bg"
+                    android:contentDescription="Peanut Butter"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/peanuts" />
+
+                <CheckBox
+                    android:id="@+id/checkPeanut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:buttonTint="#F6C90E"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Peanut Butter"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rounded_image_bg"
+                    android:contentDescription="Pretzels"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pretzels" />
+
+                <CheckBox
+                    android:id="@+id/checkPretzels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:buttonTint="#F6C90E"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Pretzels"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- 6. Marshmallows -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rounded_image_bg"
+                    android:contentDescription="Marshmallows"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/marshmallows" />
+
+                <CheckBox
+                    android:id="@+id/checkMarshmallows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:buttonTint="#F6C90E"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Marshmallows"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- 7. Hazelnut -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rounded_image_bg"
+                    android:contentDescription="Hazelnut"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/hazelnut" />
+
+                <CheckBox
+                    android:id="@+id/checkHazelnut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:buttonTint="#F6C90E"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Hazelnut"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- 8. Gummy Bear -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rounded_image_bg"
+                    android:contentDescription="Gummy Bear"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gummy" />
+
+                <CheckBox
+                    android:id="@+id/checkGummy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:buttonTint="#F6C90E"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Gummy Bear"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- 9. Cotton Candy -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rounded_image_bg"
+                    android:contentDescription="Cotton Candy"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cottoncandy" />
+
+                <CheckBox
+                    android:id="@+id/checkCottonCandy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:buttonTint="#F6C90E"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Cotton Candy"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- 10. Caramell -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rounded_image_bg"
+                    android:contentDescription="Caramell"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/caramell" />
+
+                <CheckBox
+                    android:id="@+id/checkCaramell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:buttonTint="#F6C90E"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Caramel"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- 11. Coffee Beans -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rounded_image_bg"
+                    android:contentDescription="Coffee Beans"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/coffee" />
+
+                <CheckBox
+                    android:id="@+id/checkCoffee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:buttonTint="#F6C90E"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Coffee"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- 12. Baklava -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/rounded_image_bg"
+                    android:contentDescription="Baklava"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baklava" />
+
+                <CheckBox
+                    android:id="@+id/checkBaklava"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:buttonTint="#F6C90E"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Baklava"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

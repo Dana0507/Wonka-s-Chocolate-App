@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+
+        <!-- Adjust the radius as you like -->
+        <corners android:bottomLeftRadius="40dp"
+            android:bottomRightRadius="40dp"
+          />
+
+        <!-- Optional background color if your image has transparency -->
+        <solid android:color="@android:color/transparent"/>
+    </shape>
+
+
